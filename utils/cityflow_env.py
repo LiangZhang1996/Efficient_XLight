@@ -289,14 +289,7 @@ class Intersection:
         outs_maps = {}
         for approach in self.list_approachs:
             outs_maps[approach] = sum([exitings[i] for i in index_maps[approach]])
-        """
-        turn_maps = {
-            "W": ["S", "W", "N"],
-            "E": ["N", "E", "S"],
-            "N": ["W", "N", "E"],
-            "S": ["E", "S", "W"]
-        }
-        """
+        
         turn_maps = ["S", "W", "N", "N", "E", "S", "W", "N", "E", "E", "S", "W"]
         t_m_p = [enterings[j] - outs_maps[turn_maps[j]] for j in range(12)]
         return t_m_p

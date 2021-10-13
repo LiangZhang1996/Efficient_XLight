@@ -28,7 +28,7 @@ def main(in_args=None):
         num_rounds = 80
         template = "Hangzhou"
     elif in_args.jinan:
-        count = 60
+        count = 3600
         road_net = "3_4"
         traffic_file_list = ["anon_3_4_jinan_real.json", "anon_3_4_jinan_real_2000.json",
                              "anon_3_4_jinan_real_2500.json"]
