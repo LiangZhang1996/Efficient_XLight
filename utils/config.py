@@ -1,22 +1,22 @@
 from models.fixedtime_agent import FixedtimeAgent
 from models.maxpressure_agent import MaxPressureAgent
-from models.efficientpressure_agent import EfficientPressureAgent
+from models.efficient_maxpressure_agent import EfficientMaxPressureAgent
 from models.mplight_agent import MPLightAgent
 from models.colight_agent import CoLightAgent
 from models.presslight_one import PressLightAgentOne
-from models.ep_presslight_one import EPressLightAgentOne
-from models.ep_presslight import EPressLightAgent
+from models.efficient_presslight_one import EfficientPressLightAgentOne
+from models.efficent_presslight import EfficientPressLightAgent
 from models.presslight import PressLightAgent
 
 
 DIC_AGENTS = {
     "Fixedtime": FixedtimeAgent,
     "MaxPressure": MaxPressureAgent,
-    "EfficientPressure": EfficientPressureAgent,
+    "EfficientMaxPressure": EfficientMaxPressureAgent,
     "PressLight": PressLightAgent,
-    "EPressLight": EPressLightAgent,
+    "EfficientPressLight": EfficientPressLightAgent,
     "PressLightOne": PressLightAgentOne,
-    "EPressLightOne": EPressLightAgentOne,
+    "EfficientPressLightOne": EfficientPressLightAgentOne,
     "Colight": CoLightAgent,
     "MPLight": MPLightAgent,
 }
@@ -32,8 +32,9 @@ DIC_PATH = {
 dic_traffic_env_conf = {
 
     "LIST_MODEL": ["Fixedtime",  "MaxPressure", "MPLight", "Colight", "PressLight", "PressLightOne",
-                   "EfficientPressure", "EPressLight", "EPressLightOne"],
-    "LIST_MODEL_NEED_TO_UPDATE": ["MPLight", "Colight", "PressLight", "PressLightOne", "EPressLight", "EPressLightOne"],
+                   "EfficientMaxPressure", "EfficientPressLight", "EfficientPressLightOne"],
+    "LIST_MODEL_NEED_TO_UPDATE": ["MPLight", "Colight", "PressLight", "PressLightOne", "EfficientPressLight",
+                                  "EfficientPressLightOne"],
 
     "FORGET_ROUND": 20,
     "RUN_COUNTS": 3600,

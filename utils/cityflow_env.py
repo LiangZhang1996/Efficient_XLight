@@ -174,12 +174,6 @@ class Intersection:
         else:
             list_vehicle_new_left = list(set(self.list_lane_vehicle_previous_step_in) -
                                          set(self.list_lane_vehicle_current_step_in))
-        """
-        list_vehicle_new_left_entering_lane_by_lane = self._update_leave_entering_approach_vehicle()
-        list_vehicle_new_left_entering_lane = []
-        for l in list_vehicle_new_left_entering_lane_by_lane:
-            list_vehicle_new_left_entering_lane += l
-        """
         # update vehicle arrive and left time
         self._update_arrive_time(list_vehicle_new_arrive)
         self._update_left_time(list_vehicle_new_left)

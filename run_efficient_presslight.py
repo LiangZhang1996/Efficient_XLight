@@ -9,7 +9,7 @@ import os
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("-memo",            type=str,               default='benchmark_1001')
-    parser.add_argument("-mod",             type=str,               default="EPressLightOne")  # EPressLight
+    parser.add_argument("-mod",             type=str,               default="EfficientPressLightOne")
     parser.add_argument("-eightphase",      action="store_true",    default=False)
     parser.add_argument("-gen",             type=int,               default=1)
     parser.add_argument("-multi_process",   action="store_true",    default=True)
@@ -87,7 +87,7 @@ def main(in_args=None):
             dic_traffic_env_conf_extra["PHASE_LIST"] = ['WT_ET', 'NT_ST', 'WL_EL', 'NL_SL',
                                                         'WL_WT', 'EL_ET', 'SL_ST', 'NL_NT']
 
-        if in_args.mod in ["EPressLightOne"]:
+        if in_args.mod in ["EfficientPressLightOne"]:
             dic_traffic_env_conf_extra["NUM_AGENTS"] = 1
         dic_path_extra = {
             "PATH_TO_MODEL": os.path.join("model", in_args.memo, traffic_file + "_"

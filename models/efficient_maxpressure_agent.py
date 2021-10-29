@@ -8,11 +8,11 @@ from .agent import Agent
 import numpy as np
 
 
-class EfficientPressureAgent(Agent):
+class EfficientMaxPressureAgent(Agent):
 
     def __init__(self, dic_agent_conf, dic_traffic_env_conf, dic_path, cnt_round, intersection_id):
 
-        super(EfficientPressureAgent, self).__init__(dic_agent_conf, dic_traffic_env_conf, dic_path, intersection_id)
+        super(EfficientMaxPressureAgent, self).__init__(dic_agent_conf, dic_traffic_env_conf, dic_path, intersection_id)
 
         self.current_phase_time = 0
         self.phase_length = len(self.dic_traffic_env_conf["PHASE"])

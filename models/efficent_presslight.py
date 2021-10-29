@@ -11,7 +11,7 @@ import numpy as np
 import random
 
 
-class EPressLightAgent(NetworkAgent):
+class EfficientPressLightAgent(NetworkAgent):
     def build_network(self):
         dic_input_node = {"feat1": Input(shape=(8,), name="input_cur_phase"),
                           "feat2": Input(shape=(12,), name="input_feat2")}

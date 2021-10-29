@@ -63,7 +63,7 @@ def main(in_args=None):
 
             "LIST_STATE_FEATURE": [
                 "cur_phase",
-                "traffic_movement_pressure_efficient",
+                "traffic_movement_pressure_queue_efficient",
                 "adjacency_matrix",
             ],
 
